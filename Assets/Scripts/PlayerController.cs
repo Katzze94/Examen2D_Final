@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float _jumpForce = 5;
 
+     public static float _coinNumber = 0;
+
 
 
     // Update is called once per frame
@@ -83,7 +85,7 @@ void Awake()
     void Jump()
     {
         characterRigidBody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-        //characterAnimator.SetBool("IsJumping", true);
+        characterAnimator.SetBool("IsJumping", true);
 
     }
 }
