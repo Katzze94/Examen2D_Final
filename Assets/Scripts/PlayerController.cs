@@ -83,7 +83,7 @@ void Awake()
     void Jump()
     {
         characterRigidBody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-        characterAnimator.SetBool("IsJumping", true);
+        //characterAnimator.SetBool("IsJumping", true);
 
     }
 }
